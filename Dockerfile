@@ -10,6 +10,10 @@ RUN apt-get update \
  ruby \
  ruby-dev \
  bundler \
+ libfreetype6 \
+ libfontconfig \
+ gcc \
+ make \
  # Slim down image
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
