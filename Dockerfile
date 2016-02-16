@@ -12,8 +12,7 @@ RUN apt-get update \
  bundler \
  libfreetype6 \
  libfontconfig \
- gcc \
- make \
+ build-essential \
  # Slim down image
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
